@@ -13,13 +13,25 @@ class Vehicle {
     var colour: String!
     var year: Int!
     
-    init(company: String, plate: String, colour: String, year: Int)
+    init()
     {
-        self.company = company
-        self.plate = plate
-        self.colour = colour
+       
+    }
+    
+    func setVehicleData()
+    {
+        print("company")
+        self.company = String(readLine()!)
+        print("plate")
+        self.plate = String(readLine()!)
+        print("colour")
+        self.colour = String(readLine()!)
+        print("year")
+        self.year = Int(readLine()!)
+    
     }
     func display() {
+        print("company: \(self.company!) \t plate: \(self.plate!) \t colour: \(self.colour!) \t year: \(self.year!)")
         
     }
     
